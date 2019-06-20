@@ -18,20 +18,38 @@ For detailed instructions on how to get started, check out this [guide](https://
 ## Contributing
 
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-## The following steps are done by me to finish the Project
-+ I open the github link given by udacity and I clone that Project
-+ I find some files while cloning the project .The following files are:
-  + Images
-  + `js/app.js`,`js/engine.js`,`js/resources.js`
-  + `index.html`
-  + `readme.md`this are the files I found
-+ I observed all the code given by **udacity** and executed the Project
-+ I found some errors in console.I started solving those errors and finally I solved them.
-+ After solving those errors I got a canvas on the screen
-+ After observing the entire code I understand that most of the modifications will takes place in app.js
-+ I had declared a class called **heroine** to intialize the player .I had taken `three` parameters which declares the x nd Y positions of player and `speed `declares speed of the player.
-+ I declared the function called **handleInput** in order to declare the operations what we need to perform in after clicking a key.
-+ Before that I added EventListener to all the keys .
-+ Keys will be used to operate the player.I used enemysprites as bugs .while operating the player whenever the player touches the game will restart.
-+ I used the logic that is the player will changes based on the score.
-If the score is 10 then the game will ends.
+## The following steps done by me inorder to complete this project
+### how to download the Project
++ I observed the github link provided by the **udacity** and by using that link I downloaded the project. https://github.com/udacity/frontend-nanodegree-arcade-game
+### Coding part
++ After cloning the project from udacity I observed the files provided in it.
+The files present in it are:
+`app.js`,`engine.js`,`resource.js`
+`index.html`, `readme.md`, img folder.
++ I opened all the code given in files , After observing all the files I understand what I need to do in order to implement this project.
++ I observed ,that most of the modifications will takes place in app.js.
+
+
+### Modifications done by me
++ While developing this project I had taken two characters mainly `heroine` and `spriteItem`.
++ The main theme of this project is, the player starts moving up whenever the enemysprite touches , then  actor gets killed , then entire game will restart.
++  While executing the code in console provided by **udacity** through Github, intially an error `allEnemies` is found, and I Solved the error.
++ similarly I found some more errors, which I resoloved it to get the game on screen.
++ In `app.js` file I declared three functions namely
+    + render()
+    + update()
+    + handleInput()
++ `render()` function is applicable to both player and enemysprite . The main function of `render()` is to fix the position of object.
++ `update()` function is applicable to both player and enemysprite. The main function of `update()` is to update the change in positon of player as well as sprite.
++ `handleInput() ` function mainly used for keys what I had used in the project .
+  1. I used `up arrow` to move the player upwards ,so that only `y` position of the player only changes .
+  2. I used `down arrow` to move the player downwards .so that only `y`position of player changes.
+  3. I used `left arrow` to make the player to move towards left side so that only `x` position of player changes.
+  4. I used `right arrow` to make the player to move towards the right so that only `x` position of the player changes.
++ I used **score** variable to show the score of the player. Whenever the player reaches the water layer the score is incremented by `1`.
++ For some bold look to my game I placed some player on the top of the game. If the score is `even count` then we get one type of player, else if the score is `odd count` then we get another type of player sprite.
++ When the player touches the bug, then pop menu is displayed. While clicking `ok` in the pop up ,then game will be `reloaded`.
+
+### How to play the game
++ select the player first and use the arrow keys to move the player up ,right ,down ,left.
++ open your project in browser from `index.html` page.
